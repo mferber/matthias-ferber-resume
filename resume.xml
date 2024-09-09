@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resume name="Matthias Ferber">
+  <contact-info>
+    <contact-item column="left">Cambridge, MA 02138</contact-item>
+    <contact-item column="left">Mobile • (617) 909-5685</contact-item>
+    <contact-item column="left">Email • matthias.ferber@gmail.com</contact-item>
+    <contact-item column="right" logo="linkedin">https://www.linkedin.com/in/matthiasferber • LinkedIn</contact-item>
+    <contact-item column="right" logo="github">https://github.com/mferber • GitHub</contact-item>
+  </contact-info>
+
+  <section heading="Profile">
+    <text>
+      Full-stack, multi-talented software engineer with long proven track record delivering high-quality engineering solutions to employers and consulting clients of all sizes in a wide variety of industries. Experienced in a wide range of platforms and languages, covering technical design, development, testing, documentation, and CI/CD.
+    </text>
+  </section>
+
+  <section heading="Skills">
+    <skills-category heading="Languages">
+      <skill>JavaScript/ES6</skill>
+      <skill>TypeScript</skill>
+      <skill>Java</skill>
+      <skill>Kotlin</skill>
+      <skill>Swift</skill>
+      <skill>Objective-C</skill>
+      <skill>Python</skill>
+      <skill>Ruby</skill>
+      <skill>HTML</skill>
+      <skill>CSS/Sass</skill>
+      <skill>XML</skill>
+      <skill>SQL</skill>
+    </skills-category>
+    <skills-category heading="Platforms and frameworks">
+      <skill>iOS</skill>
+      <skill>Android</skill>
+      <skill>React.js</skill>
+      <skill>React Native</skill>
+      <skill>Node.js</skill>
+      <skill>Express.js</skill>
+      <skill>RxSwift</skill>
+      <skill>SwiftUI</skill>
+      <skill>Quick/Nimble</skill>
+      <skill>JUnit</skill>
+      <skill>Mocha.js</skill>
+    </skills-category>
+    <skills-category heading="Tools and practices">
+      <skill>Git</skill>
+      <skill>REST</skill>
+      <skill>PostgreSQL</skill>
+      <skill>MySQL</skill>
+      <skill>CI/CD</skill>
+      <skill>Docker</skill>
+      <skill>Kubernetes</skill>
+      <skill>Agile</skill>
+      <skill>pair programming</skill>
+      <skill>TDD</skill>
+    </skills-category>
+  </section>
+
+  <section heading="Work experience">
+
+    <job company="Toast" location="Boston, MA" start="2022" end="2024">
+      <job-title>Staff Software Engineer</job-title>
+      <text>Maintained payroll processing and HR life cycle systems in large suite of restaurant operations and management cloud software in services-based, DevOps-managed environment.
+        <i>(Kotlin, TypeScript, DropWizard, SQL, JDBI; legacy .NET)</i>
+      </text>
+      <bulleted-list>
+        <list-item>Built and improved backend services for running customers’ payroll and computing tax withholdings, while supporting and maintaining a challenging legacy codebase that provided core features.</list-item>
+        <list-item>Implemented new front-end redesigns to bring legacy payroll feature UX up to current standards.</list-item>
+        <list-item>Supported tax collection team through tool-building and investigations into problem cases.</list-item>
+        <list-item>Continually updated taxation subsystems to account for frequent changes to federal, state, and local tax law and regulations.</list-item>
+      </bulleted-list>
+    </job>
+
+    <job company="Cantina Consulting" location="Boston, MA" start="2013" end="2022">
+      <job-title>
+        Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant <when> (2013–2018)</when>
+      </job-title>
+      <text>Led and contributed to 13+ projects across a wide range of technologies and platforms, for startups and established clients in many industries, including IoT, publishing, education, and restaurant management. Client engagements have included:</text>
+      <bulleted-list>
+        <list-item heading="Bose">
+          Senior team member on new customer experience iPhone app for controlling and interacting with upcoming speaker and headphones products. Implemented features such as Bluetooth anti-tracking measures, workflows for in-room audio calibration and remote-control identification processes, and intelligent battery charging status display.
+          <i>(iOS, RxSwift; Swift)</i>
+        </list-item>
+        <list-item heading="U.S. Air Force, Kessel Run Experimentation Lab (KREL)">
+          Senior team member on web application. Implemented front- and back-end components and worked with CI/CD pipeline; contributed to feature design and UX. <i>(Node, React, Mocha, Chai, GitLab CI; TypeScript, Java)</i>
+        </list-item>
+        <list-item heading="Newport Folk Festival (pro bono)">
+          Led and contributed to teams designing and developing multiple annual versions of innovative, UX Award–winning companion app to the music festival, providing user customization tools and real-time updates. Carried out early ground-up platform-native iOS rewrite, with time-sensitive UI during the festival and built-in testing and log-sending facilities. Advised client on UX and implementation strategies. <i>(iOS, React Native; Objective-C, JavaScript)</i>
+        </list-item>
+        <list-item heading="Federal contractor specializing in security">
+          Led a hands-on evaluation of several user authentication product integrations to inform a government–banking industry consortium. Managed overall project and client and vendor relations. Directed small team in building test beds, implementing integrations, and collecting data. Delivered full report plus source code. <i>(iOS, OAuth 2.0, Node; Swift, JavaScript, various security products)</i>
+        </list-item>
+        <list-item heading="Toast">
+          Senior team member on restaurant management hardware/software system. Implemented front- and back-end components for features including second-screen support for a customer-facing display and support for tipping delivery drivers. <i>(Android, Play, JUnit; Java)</i>
+        </list-item>
+        <list-item heading="Pearson Education">
+          Led technical design and implementation of web-based exam system accompanying the company’s flagship accounting textbooks. Implemented all aspects of content management, student tracking, readings, and in-app exams, as well as integration with Pearson’s larger education platform. Advised clients on ongoing implementation strategy and future development directions. <i>(Node, MongoDB; JavaScript)</i>
+        </list-item>
+        <list-item heading="Link AKC">
+          Core team member on mobile app component of IoT-enabled smart dog collar product under concurrent development, winner of the CES 2017 Best of Innovation Award. Implemented features such as map-based safe area designation and dog activity chart display. <i>(iOS, RxSwift; Swift)</i>
+        </list-item>
+        <list-item heading="Clothbound">
+          Led development of iPhone app for startup to host restaurant job postings and résumés with full search capabilities on both sides, in-app messaging, and job application features. Developed custom composable UI library to enable completion of large app in manageable time. <i>(iOS; Objective-C)</i>
+        </list-item>
+        <list-item heading="Wisp">
+          Developed audiovisual/social media iPhone app for startup to create and share narrated photo slideshows. <i>(iOS; Objective-C)</i>
+        </list-item>
+        <list-item heading="Empower Retirement">
+          Led development of CES-nominated retirement gauge app for then-brand-new Apple Watch. <i>(Apple Watch; Swift)</i>
+        </list-item>
+      </bulleted-list>
+      <text>
+        Accomplishments outside of client projects:
+      </text>
+      <bulleted-list>
+        <list-item>Co-founded and managed Data Privacy &amp; Security Working Group to educate and advocate for good practices in application security and user privacy. Also managed Mobile Products Working Group to help direct company approaches to iOS and Android development.</list-item>
+        <list-item>Co-managed weekly activity series to promote team bonding through games, project presentations, demos, etc.; started and ran internal book club to aid growth in line with company strategy.</list-item>
+      </bulleted-list>
+    </job>
+
+    <job company="HighWire Press at Stanford University" location="Palo Alto, CA" start="2001" end="2013">
+      <job-title>Systems Software Developer</job-title>
+      <text>Developed systems software and managed discoverability tools at the leading nonprofit online academic research publisher, home to over 1,500 online journals, books, and other resources.</text>
+      <bulleted-list>
+        <list-item>Developed components of in-house hosted Apache/Tomcat-based web publication software using Java, Perl, C/C++, XSLT, Python, and other languages.</list-item>
+        <list-item>Integrated and maintained multiple iterations of powerful search engine servicing 1 million searches a day, including highly customized features for Oxford English Dictionary.</list-item>
+        <list-item>Introduced and promoted automated testing practices, using JUnit with Jython.</list-item>
+        <list-item>Executed, maintained, and significantly improved production deployment system.</list-item>
+      </bulleted-list>
+    </job>
+
+    <job company="BWise" location="Redwood Shores, CA" start="2000" end="2001">
+      <job-title>Senior Software Engineer</job-title>
+      <text>Led development of Java API to existing Smalltalk backend in business process management tool.</text>
+    </job>
+
+    <job company="The Jacobson Group" location="Cambridge, MA" start="1994" end="2000">
+      <job-title>Senior Application Developer/Consultant</job-title>
+      <text>Developed, implemented, and supported mission-critical distributed applications for clients in a variety of industries, mainly using Lotus Notes/Domino. Led efforts to improve in-house technological skill sets.</text>
+    </job>
+
+  </section>
+
+  <section heading="Education">
+    <education-item institution="Yale University">B.A. in History; <i>cum laude</i> with Distinction in the Major</education-item>
+    <education-item institution="Harvard Extension School">Courses in Data Structures, Operating Systems</education-item>
+    <education-item institution="Coursera">Courses in Algorithms, Data Science</education-item>
+  </section>
+
+</resume>

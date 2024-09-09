@@ -1,0 +1,3 @@
+#!/bin/sh
+
+fop -c ./fop.xconf -xml resume.xml -xsl resume.xsl fo-resume.pdf
