@@ -4,5 +4,5 @@ for VARIANT in mobile general
 do
   DEST=resume/$VARIANT
   mkdir -p $DEST
-  fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume.xsl $DEST/Matthias_Ferber_resume.pdf
+  fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume-pdf.xsl $DEST/Matthias_Ferber_resume.pdf
 done
