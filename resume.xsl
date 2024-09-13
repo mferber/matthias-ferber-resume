@@ -3,10 +3,13 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:exsl="http://exslt.org/common">
+  xmlns:exsl="http://exslt.org/common"
+  xmlns:str="http://exslt.org/strings">
+
+  <xsl:param name="variant" select="'unspecified'" />
 
   <xsl:variable select="'Optima'" name="font-family" />
-  
+
   <xsl:variable select="'0.75in'" name="margin" />
   <xsl:variable select="'18pt'" name="font-size-name" />
   <xsl:variable select="'9pt'" name="font-size-section-heading" />
@@ -156,6 +159,75 @@
     <fo:inline font-weight="700">
       <xsl:value-of select="." />
     </fo:inline>
+  </xsl:template>
+
+  <xsl:template match="job-items">
+    <xsl:variable name="all-job-items" select="./job-item" />
+
+    <!--
+      Dynamically generate the bullet list of job items for the currently selected
+      resume $variant: see what items belong to the current variant by consulting the
+      job-item-list elements, and then generate a list-item for each corresponding
+      job item.
+
+      If no matching job-item-list exists, then include all job items in document order.
+    -->
+    <xsl:variable name="job-items-to-include">
+      <xsl:choose>
+        <xsl:when test="job-item-list[@variant=$variant]">
+
+          <xsl:variable name="include-ids">
+            <xsl:copy-of select="str:tokenize(job-item-list[@variant=$variant]/@items)" />
+          </xsl:variable>
+
+          <xsl:for-each select="exsl:node-set($include-ids)/*">
+            <xsl:variable name="id" select="./text()" />
+            <xsl:copy-of select="$all-job-items[@id=$id]" />
+          </xsl:for-each>
+
+        </xsl:when>
+        <xsl:otherwise>
+
+          <!-- no matching variants defined -->
+          <xsl:if test="job-item-list">
+            <!-- but this job does use variants, so it's probably a mistake that it doesn't match -->
+            <xsl:message>
+              <xsl:text>***** NOTICE (</xsl:text>
+              <xsl:value-of select="./parent::job[1]/@company" />
+              <xsl:text>): </xsl:text>
+              <xsl:text>no match for requested variant '</xsl:text>
+              <xsl:value-of select="$variant" />
+              <xsl:text>'; all available job items will be included</xsl:text>
+            </xsl:message>
+          </xsl:if>
+
+          <xsl:copy-of select="$all-job-items" />
+
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+
+    <xsl:variable name="list-items">
+      <!-- find the job item list for the selected $variant and pull out the job item ids -->
+      <xsl:for-each select="exsl:node-set($job-items-to-include)/*">
+
+        <list-item>
+          <!-- include the list item heading if the job item has one -->
+          <xsl:if test="@heading">
+            <xsl:attribute name="heading">
+              <xsl:value-of select="@heading" />
+            </xsl:attribute>
+          </xsl:if>
+
+          <xsl:copy-of select="." />
+        </list-item>
+
+      </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:call-template name="render-bulleted-list">
+      <xsl:with-param name="items" select="$list-items" />
+    </xsl:call-template>
   </xsl:template>
 
   <xsl:template match="education-item">

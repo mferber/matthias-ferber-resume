@@ -64,12 +64,12 @@
       <text>Maintained payroll processing and HR life cycle systems in large suite of restaurant operations and management cloud software in services-based, DevOps-managed environment.
         <i>(Kotlin, TypeScript, DropWizard, SQL, JDBI; legacy .NET)</i>
       </text>
-      <bulleted-list>
-        <list-item>Built and improved backend services for running customers’ payroll and computing tax withholdings, while supporting and maintaining a challenging legacy codebase that provided core features.</list-item>
-        <list-item>Implemented new front-end redesigns to bring legacy payroll feature UX up to current standards.</list-item>
-        <list-item>Supported tax collection team through tool-building and investigations into problem cases.</list-item>
-        <list-item>Continually updated taxation subsystems to account for frequent changes to federal, state, and local tax law and regulations.</list-item>
-      </bulleted-list>
+      <job-items>
+        <job-item>Built and improved backend services for running customers’ payroll and computing tax withholdings, while supporting and maintaining a challenging legacy codebase that provided core features.</job-item>
+        <job-item>Implemented new front-end redesigns to bring legacy payroll feature UX up to current standards.</job-item>
+        <job-item>Supported tax collection team through tool-building and investigations into problem cases.</job-item>
+        <job-item>Continually updated taxation subsystems to account for frequent changes to federal, state, and local tax law and regulations.</job-item>
+      </job-items>
     </job>
 
     <job company="Cantina Consulting" location="Boston, MA" start="2013" end="2022">
@@ -77,57 +77,70 @@
         Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant <when> (2013–2018)</when>
       </job-title>
       <text>Led and contributed to 13+ projects across a wide range of technologies and platforms, for startups and established clients in many industries, including IoT, publishing, education, and restaurant management. Client engagements have included:</text>
-      <bulleted-list>
-        <list-item heading="Bose">
+
+      <job-items>
+        <!--
+          We'll include a subset of the job-items that follow, depending on the
+          $variant param passed to the stylesheet, to generate different resume
+          variants. The job-item-list elements specify the subset to include and
+          the ordering.
+        -->
+        <job-item-list variant="mobile" items="bose newport linkakc clothbound toast wisp kesselrun" />
+        <job-item-list variant="general" items="bose kesselrun toast pearson clothbound" />
+
+        <job-item id="bose" heading="Bose">
           Senior team member on new customer experience iPhone app for controlling and interacting with upcoming speaker and headphones products. Implemented features such as Bluetooth anti-tracking measures, workflows for in-room audio calibration and remote-control identification processes, and intelligent battery charging status display.
           <i>(iOS, RxSwift; Swift)</i>
-        </list-item>
-        <list-item heading="U.S. Air Force, Kessel Run Experimentation Lab (KREL)">
-          Senior team member on web application. Implemented front- and back-end components and worked with CI/CD pipeline; contributed to feature design and UX. <i>(Node, React, Mocha, Chai, GitLab CI; TypeScript, Java)</i>
-        </list-item>
-        <list-item heading="Newport Folk Festival (pro bono)">
-          Led and contributed to teams designing and developing multiple annual versions of innovative, UX Award–winning companion app to the music festival, providing user customization tools and real-time updates. Carried out early ground-up platform-native iOS rewrite, with time-sensitive UI during the festival and built-in testing and log-sending facilities. Advised client on UX and implementation strategies. <i>(iOS, React Native; Objective-C, JavaScript)</i>
-        </list-item>
-        <list-item heading="Federal contractor specializing in security">
-          Led a hands-on evaluation of several user authentication product integrations to inform a government–banking industry consortium. Managed overall project and client and vendor relations. Directed small team in building test beds, implementing integrations, and collecting data. Delivered full report plus source code. <i>(iOS, OAuth 2.0, Node; Swift, JavaScript, various security products)</i>
-        </list-item>
-        <list-item heading="Toast">
-          Senior team member on restaurant management hardware/software system. Implemented front- and back-end components for features including second-screen support for a customer-facing display and support for tipping delivery drivers. <i>(Android, Play, JUnit; Java)</i>
-        </list-item>
-        <list-item heading="Pearson Education">
-          Led technical design and implementation of web-based exam system accompanying the company’s flagship accounting textbooks. Implemented all aspects of content management, student tracking, readings, and in-app exams, as well as integration with Pearson’s larger education platform. Advised clients on ongoing implementation strategy and future development directions. <i>(Node, MongoDB; JavaScript)</i>
-        </list-item>
-        <list-item heading="Link AKC">
-          Core team member on mobile app component of IoT-enabled smart dog collar product under concurrent development, winner of the CES 2017 Best of Innovation Award. Implemented features such as map-based safe area designation and dog activity chart display. <i>(iOS, RxSwift; Swift)</i>
-        </list-item>
-        <list-item heading="Clothbound">
-          Led development of iPhone app for startup to host restaurant job postings and résumés with full search capabilities on both sides, in-app messaging, and job application features. Developed custom composable UI library to enable completion of large app in manageable time. <i>(iOS; Objective-C)</i>
-        </list-item>
-        <list-item heading="Wisp">
-          Developed audiovisual/social media iPhone app for startup to create and share narrated photo slideshows. <i>(iOS; Objective-C)</i>
-        </list-item>
-        <list-item heading="Empower Retirement">
-          Led development of CES-nominated retirement gauge app for then-brand-new Apple Watch. <i>(Apple Watch; Swift)</i>
-        </list-item>
-      </bulleted-list>
-      <text>
-        Accomplishments outside of client projects:
-      </text>
-      <bulleted-list>
-        <list-item>Co-founded and managed Data Privacy &amp; Security Working Group to educate and advocate for good practices in application security and user privacy. Also managed Mobile Products Working Group to help direct company approaches to iOS and Android development.</list-item>
-        <list-item>Co-managed weekly activity series to promote team bonding through games, project presentations, demos, etc.; started and ran internal book club to aid growth in line with company strategy.</list-item>
-      </bulleted-list>
+        </job-item>
+
+        <job-item id="kesselrun" heading="U.S. Air Force, Kessel Run Experimentation Lab (KREL)">
+            Senior team member on web application. Implemented front- and back-end components and worked with CI/CD pipeline; contributed to feature design and UX. <i>(Node, React, Mocha, Chai, GitLab CI; TypeScript, Java)</i>
+        </job-item>
+
+        <job-item id="newport" heading="Newport Folk Festival (pro bono)">
+            Led and contributed to teams designing and developing multiple annual versions of innovative, UX Award–winning companion app to the music festival, providing user customization tools and real-time updates. Carried out early ground-up platform-native iOS rewrite, with time-sensitive UI during the festival and built-in testing and log-sending facilities. Advised client on UX and implementation strategies. <i>(iOS, React Native; Objective-C, JavaScript)</i>
+        </job-item>
+
+        <job-item id="security-demos" heading="Federal contractor specializing in security">
+            Led a hands-on evaluation of several user authentication product integrations to inform a government–banking industry consortium. Managed overall project and client and vendor relations. Directed small team in building test beds, implementing integrations, and collecting data. Delivered full report plus source code. <i>(iOS, OAuth 2.0, Node; Swift, JavaScript, various security products)</i>
+        </job-item>
+
+        <job-item id="toast" heading="Toast">
+            Senior team member on restaurant management hardware/software system. Implemented front- and back-end components for features including second-screen support for a customer-facing display and support for tipping delivery drivers. <i>(Android, Play, JUnit; Java)</i>
+        </job-item>
+
+        <job-item id="pearson" heading="Pearson Education">
+            Led technical design and implementation of web-based exam system accompanying the company’s flagship accounting textbooks. Implemented all aspects of content management, student tracking, readings, and in-app exams, as well as integration with Pearson’s larger education platform. Advised clients on ongoing implementation strategy and future development directions. <i>(Node, MongoDB; JavaScript)</i>
+        </job-item>
+
+        <job-item id="linkakc" heading="Link AKC">
+            Core team member on mobile app component of IoT-enabled smart dog collar product under concurrent development, winner of the CES 2017 Best of Innovation Award. Implemented features such as map-based safe area designation and dog activity chart display. <i>(iOS, RxSwift; Swift)</i>
+        </job-item>
+
+        <job-item id="clothbound" heading="Clothbound">
+            Led development of iPhone app for startup to host restaurant job postings and résumés with full search capabilities on both sides, in-app messaging, and job application features. Developed custom composable UI library to enable completion of large app in manageable time. <i>(iOS; Objective-C)</i>
+        </job-item>
+
+        <job-item id="wisp" heading="Wisp">
+            Developed audiovisual/social media iPhone app for startup to create and share narrated photo slideshows. <i>(iOS; Objective-C)</i>
+        </job-item>
+
+        <job-item id="empower" heading="Empower Retirement">
+            Led development of CES-nominated retirement gauge app for then-brand-new Apple Watch. <i>(Apple Watch; Swift)</i>
+        </job-item>
+
+      </job-items>
     </job>
 
     <job company="HighWire Press at Stanford University" location="Palo Alto, CA" start="2001" end="2013">
       <job-title>Systems Software Developer</job-title>
       <text>Developed systems software and managed discoverability tools at the leading nonprofit online academic research publisher, home to over 1,500 online journals, books, and other resources.</text>
-      <bulleted-list>
-        <list-item>Developed components of in-house hosted Apache/Tomcat-based web publication software using Java, Perl, C/C++, XSLT, Python, and other languages.</list-item>
-        <list-item>Integrated and maintained multiple iterations of powerful search engine servicing 1 million searches a day, including highly customized features for Oxford English Dictionary.</list-item>
-        <list-item>Introduced and promoted automated testing practices, using JUnit with Jython.</list-item>
-        <list-item>Executed, maintained, and significantly improved production deployment system.</list-item>
-      </bulleted-list>
+      <job-items>
+        <job-item>Developed components of in-house hosted Apache/Tomcat-based web publication software using Java, Perl, C/C++, XSLT, Python, and other languages.</job-item>
+        <job-item>Integrated and maintained multiple iterations of powerful search engine servicing 1 million searches a day, including highly customized features for Oxford English Dictionary.</job-item>
+        <job-item>Introduced and promoted automated testing practices, using JUnit with Jython.</job-item>
+        <job-item>Executed, maintained, and significantly improved production deployment system.</job-item>
+      </job-items>
     </job>
 
     <job company="BWise" location="Redwood Shores, CA" start="2000" end="2001">
