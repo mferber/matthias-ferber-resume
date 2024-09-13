@@ -7,6 +7,7 @@
   xmlns:str="http://exslt.org/strings">
 
   <xsl:param name="variant" select="'unspecified'" />
+  <xsl:param name="include-months" select="'no'" /> <!-- pass 'yes' to turn on months display -->
 
   <xsl:variable select="'Optima'" name="font-family" />
 
@@ -29,6 +30,8 @@
   <xsl:variable select="'0.5em'" name="space-after-bulleted-list" />
   <xsl:variable select="'1em'" name="space-after-job" />
   <xsl:variable select="'0.8em'" name="contact-logo-size" />
+
+  <xsl:variable name="months" select="str:tokenize('Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.')" />
 
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
@@ -123,7 +126,7 @@
   <xsl:template match="job">
     <fo:block space-after="{$space-after-job}">
       <fo:table width="100%" table-layout="fixed">
-        <fo:table-column column-width="proportional-column-width(4)" />
+        <fo:table-column column-width="proportional-column-width(3)" />
         <fo:table-column column-width="proportional-column-width(1)" />
         <fo:table-body>
           <fo:table-row>
@@ -135,17 +138,27 @@
               </fo:block>
             </fo:table-cell>
             <fo:table-cell text-align="right">
-              <fo:block font-size="{$font-size-subhead}" font-weight="700">
-                <xsl:value-of select="@start" />
-                <xsl:value-of select="'–'" />
-                <xsl:value-of select="@end" />
-              </fo:block>
+              <xsl:apply-templates select="." mode="dates" />
             </fo:table-cell>
           </fo:table-row>
         </fo:table-body>
       </fo:table>
 
       <xsl:apply-templates />
+    </fo:block>
+  </xsl:template>
+
+  <xsl:template match="job" mode="dates">
+    <fo:block font-size="{$font-size-subhead}" font-weight="700">
+      <xsl:call-template name="format-date">
+        <xsl:with-param name="month" select="@startmonth" />
+        <xsl:with-param name="year" select="@startyear" />
+      </xsl:call-template>
+      <xsl:value-of select="'–'" />
+      <xsl:call-template name="format-date">
+        <xsl:with-param name="month" select="@endmonth" />
+        <xsl:with-param name="year" select="@endyear" />
+      </xsl:call-template>
     </fo:block>
   </xsl:template>
 
@@ -292,6 +305,22 @@
       </xsl:for-each>
 
     </fo:list-block>
+  </xsl:template>
+
+  <xsl:template name="format-date">
+    <xsl:param name="month" />
+    <xsl:param name="year" />
+
+    <xsl:choose>
+      <xsl:when test="$include-months = 'yes' and $month">
+        <xsl:value-of select="exsl:node-set($months)[$month]" />
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="$year" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$year" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>

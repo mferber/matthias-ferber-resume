@@ -7,5 +7,6 @@ do
   fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume-pdf.xsl $DEST/Matthias_Ferber_resume.pdf
 
   # to generate plaintext, just use the built-in XSLT engine bundled in FOP for simplicity
-  fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume-text.xsl -foout $DEST/Matthias_Ferber_resume.txt
+  # include months in work timeframes - a lot of applications ask for those
+  fop -param variant $VARIANT -param include-months yes -c ./fop.xconf -xml resume.xml -xsl resume-text.xsl -foout $DEST/Matthias_Ferber_resume.txt
 done

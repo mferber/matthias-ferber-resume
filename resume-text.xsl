@@ -9,6 +9,7 @@
   <xsl:strip-space elements="*"/>
 
   <xsl:param name="variant" select="'unspecified'" />
+  <xsl:param name="include-months" select="'no'" /> <!-- pass 'yes' to turn on months display -->
 
   <xsl:template match="/">
     <xsl:apply-templates />
@@ -58,7 +59,15 @@
     <xsl:text>&#x0a;</xsl:text>
     <xsl:value-of select="@location" />
     <xsl:text>&#x0a;</xsl:text>
-    <xsl:value-of select="@start" />–<xsl:value-of select="@end" />
+    <xsl:call-template name="format-date">
+      <xsl:with-param name="year" select="@startyear" />
+      <xsl:with-param name="month" select="@startmonth" />
+    </xsl:call-template>
+    <xsl:text>–</xsl:text>
+    <xsl:call-template name="format-date">
+      <xsl:with-param name="year" select="@endyear" />
+      <xsl:with-param name="month" select="@endmonth" />
+    </xsl:call-template>
     <xsl:text>&#x0a;</xsl:text>
     <xsl:value-of select="job-title" />
     <xsl:text>&#x0a;&#x0a;</xsl:text>
@@ -182,6 +191,17 @@
       <xsl:value-of select="normalize-space(.)" />
       <xsl:text>&#x0a;&#x0a;</xsl:text>
     </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template name="format-date">
+    <xsl:param name="month" />
+    <xsl:param name="year" />
+
+    <xsl:if test="$include-months = 'yes' and $month">
+      <xsl:value-of select="$month" />
+      <xsl:text>/</xsl:text>
+    </xsl:if>
+    <xsl:value-of select="$year" />
   </xsl:template>
 
 </xsl:stylesheet>

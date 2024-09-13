@@ -59,7 +59,7 @@
 
   <section heading="Work experience">
 
-    <job company="Toast" location="Boston, MA" start="2022" end="2024">
+    <job company="Toast" location="Boston, MA" startmonth="9" startyear="2022" endmonth="2" endyear="2024">
       <job-title>Staff Software Engineer</job-title>
       <text>Maintained payroll processing and HR life cycle systems in large suite of restaurant operations and management cloud software in services-based, DevOps-managed environment.
         <i>(Kotlin, TypeScript, DropWizard, SQL, JDBI; legacy .NET)</i>
@@ -72,7 +72,7 @@
       </job-items>
     </job>
 
-    <job company="Cantina Consulting" location="Boston, MA" start="2013" end="2022">
+    <job company="Cantina Consulting" location="Boston, MA" startmonth="6" startyear="2013" endmonth="8" endyear="2022">
       <job-title>Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant <when> (2013–2018)</when></job-title>
       <text>Led and contributed to 13+ projects across a wide range of technologies and platforms, for startups and established clients in many industries, including IoT, publishing, education, and restaurant management. Client engagements have included:</text>
 
@@ -137,7 +137,7 @@
       </job-items>
     </job>
 
-    <job company="HighWire Press at Stanford University" location="Palo Alto, CA" start="2001" end="2013">
+    <job company="HighWire Press at Stanford University" location="Palo Alto, CA" startmonth="4" startyear="2001" endmonth="3" endyear="2013">
       <job-title>Systems Software Developer</job-title>
       <text>Developed systems software and managed discoverability tools at the leading nonprofit online academic research publisher, home to over 1,500 online journals, books, and other resources.</text>
       <job-items>
@@ -148,12 +148,12 @@
       </job-items>
     </job>
 
-    <job company="BWise" location="Redwood Shores, CA" start="2000" end="2001">
+    <job company="BWise" location="Redwood Shores, CA" startmonth="8" startyear="2000" endmonth="5" endyear="2001">
       <job-title>Senior Software Engineer</job-title>
       <text>Led development of Java API to existing Smalltalk backend in business process management tool.</text>
     </job>
 
-    <job company="The Jacobson Group" location="Cambridge, MA" start="1994" end="2000">
+    <job company="The Jacobson Group" location="Cambridge, MA" startmonth="6" startyear="1994" endmonth="6" endyear="2000">
       <job-title>Senior Application Developer/Consultant</job-title>
       <text>Developed, implemented, and supported mission-critical distributed applications for clients in a variety of industries, mainly using Lotus Notes/Domino. Led efforts to improve in-house technological skill sets.</text>
     </job>
