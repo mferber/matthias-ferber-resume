@@ -1,13 +1,8 @@
 #!/bin/bash
 
-while getopts "v:" opt; do
-   case $opt in
-      v) VARIANT=$OPTARG;;
-   esac
+for VARIANT in mobile general
+do
+  DEST=resume/$VARIANT
+  mkdir -p $DEST
+  fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume.xsl $DEST/Matthias_Ferber_resume.pdf
 done
-
-if [[ "" == "$VARIANT" ]]; then
-  fop -c ./fop.xconf -xml resume.xml -xsl resume.xsl fo-resume.pdf
-else
-  fop -param variant "$VARIANT" -c ./fop.xconf -xml resume.xml -xsl resume.xsl fo-resume.pdf
-fi
