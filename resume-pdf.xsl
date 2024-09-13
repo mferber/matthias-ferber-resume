@@ -114,7 +114,7 @@
     </fo:block>
   </xsl:template>
 
-  <!-- Concatenate all skill items into a comma-delimited list -->
+  <!-- Concatenate all skill items into a delimited list -->
   <xsl:template match="skill">
     <xsl:value-of select="." />
     <xsl:if test="count(following-sibling::*) > 0"> • </xsl:if>
@@ -244,15 +244,6 @@
     <fo:block>
       <xsl:apply-templates select="text()|*" />
     </fo:block>
-  </xsl:template>
-
-  <xsl:template match="bulleted-list">
-    <xsl:variable name="list-items">
-      <xsl:copy-of select="list-item" />
-    </xsl:variable>
-    <xsl:call-template name="render-bulleted-list">
-      <xsl:with-param name="items" select="$list-items" />
-    </xsl:call-template>
   </xsl:template>
 
   <xsl:template match="i">
