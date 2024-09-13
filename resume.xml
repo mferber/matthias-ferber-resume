@@ -73,9 +73,7 @@
     </job>
 
     <job company="Cantina Consulting" location="Boston, MA" start="2013" end="2022">
-      <job-title>
-        Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant <when> (2013–2018)</when>
-      </job-title>
+      <job-title>Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant <when> (2013–2018)</when></job-title>
       <text>Led and contributed to 13+ projects across a wide range of technologies and platforms, for startups and established clients in many industries, including IoT, publishing, education, and restaurant management. Client engagements have included:</text>
 
       <job-items>
@@ -129,6 +127,13 @@
             Led development of CES-nominated retirement gauge app for then-brand-new Apple Watch. <i>(Apple Watch; Swift)</i>
         </job-item>
 
+      </job-items>
+
+      <text>Accomplishments outside of client projects:</text>
+
+      <job-items>
+        <job-item>Co-founded and managed Data Privacy &amp; Security Working Group to educate and advocate for good practices in application security and user privacy. Also managed Mobile Products Working Group to help direct company approaches to iOS and Android development.</job-item>
+        <job-item>Co-managed weekly activity series to promote team bonding through games, project presentations, demos, etc.; started and ran internal book club to aid growth in line with company strategy.</job-item>
       </job-items>
     </job>
 
