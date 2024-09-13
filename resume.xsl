@@ -25,7 +25,7 @@
   <xsl:variable select="'0.75em'" name="space-after-section-heading" />
   <xsl:variable select="'0.25em'" name="space-after-job-title" />
   <xsl:variable select="'0.5em'" name="space-before-bulleted-list" />
-  <xsl:variable select="'0.2'" name="space-after-bulleted-list-item" />
+  <xsl:variable select="'0.2em'" name="space-after-bulleted-list-item" />
   <xsl:variable select="'0.5em'" name="space-after-bulleted-list" />
   <xsl:variable select="'1em'" name="space-after-job" />
   <xsl:variable select="'0.8em'" name="contact-logo-size" />
