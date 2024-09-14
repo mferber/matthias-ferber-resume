@@ -83,8 +83,8 @@
           variants. The job-item-list elements specify the subset to include and
           the ordering.
         -->
-        <job-item-list variant="mobile" items="bose newport linkakc clothbound toast wisp kesselrun" />
-        <job-item-list variant="general" items="bose kesselrun toast pearson clothbound" />
+        <job-item-list variant="mobile" items="bose newport kesselrun linkakc clothbound toast wisp security-demos" />
+        <job-item-list variant="general" items="bose kesselrun toast newport pearson clothbound wisp security-demos" />
 
         <job-item id="bose" heading="Bose">
           Senior team member on new customer experience iPhone app for controlling and interacting with upcoming speaker and headphones products. Implemented features such as Bluetooth anti-tracking measures, workflows for in-room audio calibration and remote-control identification processes, and intelligent battery charging status display.
@@ -146,16 +146,6 @@
         <job-item>Introduced and promoted automated testing practices, using JUnit with Jython.</job-item>
         <job-item>Executed, maintained, and significantly improved production deployment system.</job-item>
       </job-items>
-    </job>
-
-    <job company="BWise" location="Redwood Shores, CA" startmonth="8" startyear="2000" endmonth="5" endyear="2001">
-      <job-title>Senior Software Engineer</job-title>
-      <text>Led development of Java API to existing Smalltalk backend in business process management tool.</text>
-    </job>
-
-    <job company="The Jacobson Group" location="Cambridge, MA" startmonth="6" startyear="1994" endmonth="6" endyear="2000">
-      <job-title>Senior Application Developer/Consultant</job-title>
-      <text>Developed, implemented, and supported mission-critical distributed applications for clients in a variety of industries, mainly using Lotus Notes/Domino. Led efforts to improve in-house technological skill sets.</text>
     </job>
 
   </section>
