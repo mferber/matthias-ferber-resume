@@ -9,13 +9,15 @@
   <xsl:param name="variant" select="'unspecified'" />
   <xsl:param name="include-months" select="'no'" /> <!-- pass 'yes' to turn on months display -->
 
+  <!-- base font attributes -->
   <xsl:variable select="'Optima'" name="font-family" />
+  <xsl:variable select="'11pt'" name="base-font-size" />
+
+  <xsl:variable select="'160%'" name="font-size-my-name" />
+  <xsl:variable select="'80%'" name="font-size-section-heading" />
+  <xsl:variable select="'120%'" name="font-size-subhead" />
 
   <xsl:variable select="'0.75in'" name="margin" />
-  <xsl:variable select="'18pt'" name="font-size-name" />
-  <xsl:variable select="'9pt'" name="font-size-section-heading" />
-  <xsl:variable select="'11pt'" name="font-size-main" />
-  <xsl:variable select="'13pt'" name="font-size-subhead" />
 
   <xsl:variable select="'1.2em'" name="bullet-leading-indent" />
   <xsl:variable select="'1em'" name="bullet-internal-indent" />
@@ -43,7 +45,7 @@
       </fo:layout-master-set>
 
       <fo:page-sequence master-reference="page" font-family="{$font-family}">
-        <fo:flow flow-name="body" font-size="{$font-size-main}">
+        <fo:flow flow-name="body" font-size="{$base-font-size}">
 
           <xsl:apply-templates select="resume" />
 
@@ -59,7 +61,7 @@
   </xsl:template>
 
   <xsl:template match="@name" mode="name-heading">
-    <fo:block font-size="{$font-size-name}" font-weight="700" text-align="center" space-after="{$space-after-name-heading}">
+    <fo:block font-size="{$font-size-my-name}" font-weight="700" text-align="center" space-after="{$space-after-name-heading}">
       <xsl:value-of select="." />
     </fo:block>
   </xsl:template>
