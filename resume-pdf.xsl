@@ -34,7 +34,7 @@
   <xsl:variable name="months" select="str:tokenize('Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.')" />
 
   <xsl:template match="/">
-    <fo:root widows="1" orphans="1" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:root widows="1" orphans="1">
       <fo:layout-master-set>
         <fo:simple-page-master master-name="page" margin-left="{$margin}" margin-top="{$margin}" margin-right="{$margin}" margin-bottom="{$margin}">
           <fo:region-body region-name="body">
