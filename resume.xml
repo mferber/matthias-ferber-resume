@@ -104,7 +104,7 @@
     </job>
 
     <job company="Cantina Consulting" location="Boston, MA" startmonth="6" startyear="2013" endmonth="8" endyear="2022">
-      <job-title>Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant <when> (2013–2018)</when></job-title>
+      <job-title>Principal Engineer<when> (2018–2022)</when>, Senior Technical Consultant<when> (2013–2018)</when></job-title>
       <text>Led and contributed to 13+ projects across a wide range of technologies and platforms, for startups and established clients in many industries, including IoT, publishing, education, and restaurant management. Client engagements have included:</text>
 
       <job-items>
