@@ -110,13 +110,15 @@
   </xsl:template>
 
   <xsl:template match="skills-category">
-    <fo:block start-indent="{$bullet-leading-indent}" text-indent="-{$bullet-leading-indent}">
-      <fo:inline font-weight="700">
-        <xsl:value-of select="@heading" />
-        <xsl:value-of select="': '" />
-      </fo:inline>
-      <xsl:apply-templates select="skill" />
-    </fo:block>
+    <xsl:if test="str:tokenize(@variant)[text()=$variant]">
+      <fo:block start-indent="{$bullet-leading-indent}" text-indent="-{$bullet-leading-indent}">
+        <fo:inline font-weight="700">
+          <xsl:value-of select="@heading" />
+          <xsl:value-of select="': '" />
+        </fo:inline>
+        <xsl:apply-templates select="skill" />
+      </fo:block>
+    </xsl:if>
   </xsl:template>
 
   <!-- Concatenate all skill items into a delimited list -->

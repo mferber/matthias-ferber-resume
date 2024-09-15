@@ -42,10 +42,12 @@
   </xsl:template>
 
   <xsl:template match="skills-category">
-    <xsl:value-of select="@heading" />
-    <xsl:value-of select="': '" />
-    <xsl:apply-templates />
-    <!-- <xsl:text>&#x0a;</xsl:text> -->
+    <xsl:if test="str:tokenize(@variant)[text()=$variant]">
+      <xsl:value-of select="@heading" />
+      <xsl:value-of select="': '" />
+      <xsl:apply-templates />
+      <xsl:text>&#x0a;</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <!-- Concatenate all skill items into a comma-delimited list -->

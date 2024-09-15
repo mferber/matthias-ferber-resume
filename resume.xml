@@ -16,7 +16,8 @@
   </section>
 
   <section heading="Skills">
-    <skills-category heading="Languages">
+
+    <skills-category heading="Languages" variant="general">
       <skill>JavaScript/ES6</skill>
       <skill>TypeScript</skill>
       <skill>Java</skill>
@@ -30,20 +31,49 @@
       <skill>XML</skill>
       <skill>SQL</skill>
     </skills-category>
-    <skills-category heading="Platforms and frameworks">
-      <skill>iOS</skill>
-      <skill>Android</skill>
+    <skills-category heading="Languages" variant="mobile">
+      <skill>Swift</skill>
+      <skill>Objective-C</skill>
+      <skill>Kotlin</skill>
+      <skill>Java</skill>
+      <skill>JavaScript/ES6</skill>
+      <skill>TypeScript</skill>
+      <skill>Python</skill>
+      <skill>Ruby</skill>
+      <skill>HTML</skill>
+      <skill>CSS/Sass</skill>
+      <skill>XML</skill>
+      <skill>SQL</skill>
+    </skills-category>
+
+    <skills-category heading="Platforms and frameworks" variant="general">
       <skill>React.js</skill>
-      <skill>React Native</skill>
       <skill>Node.js</skill>
       <skill>Express.js</skill>
+      <skill>iOS</skill>
+      <skill>Android</skill>
+      <skill>React Native</skill>
+      <skill>JUnit</skill>
+      <skill>Mocha.js</skill>
       <skill>RxSwift</skill>
       <skill>SwiftUI</skill>
+      <skill>Quick/Nimble</skill>
+    </skills-category>
+    <skills-category heading="Platforms and frameworks" variant="mobile">
+      <skill>iOS</skill>
+      <skill>Android</skill>
+      <skill>SwiftUI</skill>
+      <skill>RxSwift</skill>
+      <skill>React Native</skill>
+      <skill>React.js</skill>
+      <skill>Node.js</skill>
+      <skill>Express.js</skill>
       <skill>Quick/Nimble</skill>
       <skill>JUnit</skill>
       <skill>Mocha.js</skill>
     </skills-category>
-    <skills-category heading="Tools and practices">
+
+    <skills-category heading="Tools and practices" variant="general mobile">
       <skill>Git</skill>
       <skill>REST</skill>
       <skill>PostgreSQL</skill>
@@ -55,6 +85,7 @@
       <skill>pair programming</skill>
       <skill>TDD</skill>
     </skills-category>
+
   </section>
 
   <section heading="Work experience">
