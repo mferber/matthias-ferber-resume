@@ -84,6 +84,7 @@
     </skills-category>
 
     <skills-category heading="Tools and practices" variant="general mobile">
+      <skill>Application design and development</skill>
       <skill>Git version control</skill>
       <skill>Continuous integration/continuous deployment (CI/CD)</skill>
       <skill>Unit testing</skill>
