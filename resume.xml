@@ -47,28 +47,35 @@
     </skills-category>
 
     <skills-category heading="Platforms and frameworks" variant="general">
+      <skill>iOS</skill>
+      <skill>SwiftUI</skill>
+      <skill>RxSwift</skill>
+      <skill>AlamoFire/AFNetworking</skill>
+      <skill>Quick/Nimble</skill>
+      <skill>MVVM</skill>
+      <skill>React Native</skill>
       <skill>React.js</skill>
       <skill>Node.js</skill>
       <skill>Express.js</skill>
-      <skill>iOS</skill>
       <skill>Android</skill>
-      <skill>React Native</skill>
       <skill>JUnit</skill>
       <skill>Mocha.js</skill>
-      <skill>RxSwift</skill>
-      <skill>SwiftUI</skill>
-      <skill>Quick/Nimble</skill>
     </skills-category>
     <skills-category heading="Platforms and frameworks" variant="mobile">
       <skill>iOS</skill>
       <skill>Android</skill>
       <skill>SwiftUI</skill>
       <skill>RxSwift</skill>
+      <skill>UIKit</skill>
+      <skill>Quick/Nimble</skill>
+      <skill>Core Data</skill>
+      <skill>Core Bluetooth (BLE)</skill>
+      <skill>Swift Package Manager (SwiftPM)</skill>
+      <skill>Cocoapods</skill>
       <skill>React Native</skill>
       <skill>React.js</skill>
       <skill>Node.js</skill>
       <skill>Express.js</skill>
-      <skill>Quick/Nimble</skill>
       <skill>JUnit</skill>
       <skill>Mocha.js</skill>
     </skills-category>
