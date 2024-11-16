@@ -184,7 +184,7 @@
   <section heading="Education">
     <education-item institution="Yale University">B.A. in History; <i>cum laude</i> with Distinction in the Major</education-item>
     <education-item institution="Harvard Extension School">Courses in Data Structures, Operating Systems</education-item>
-    <education-item institution="Coursera">Courses in Algorithms, Data Science</education-item>
+    <education-item institution="Coursera">Courses in Algorithms, Data Structures</education-item>
   </section>
 
 </resume>
