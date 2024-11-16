@@ -11,7 +11,10 @@
 
   <section heading="Profile">
     <text>
-      Full-stack, multi-talented software engineer with long proven track record delivering high-quality engineering solutions to employers and consulting clients of all sizes in a wide variety of industries. Experienced in a wide range of platforms and languages, covering technical design, development, testing, documentation, and CI/CD.
+      Full-stack, multi-talented software engineer with long proven track record delivering high-quality engineering solutions to
+      employers and consulting clients of all sizes in a wide variety of industries. Experienced in a wide range of platforms and
+      languages, covering technical design, development, testing, documentation, and CI/CD. I thrive in close collaboration
+      environments and have excellent communications skills.
     </text>
   </section>
 
@@ -47,32 +50,32 @@
     </skills-category>
 
     <skills-category heading="Platforms and frameworks" variant="general">
-      <skill>iOS</skill>
-      <skill>SwiftUI</skill>
-      <skill>RxSwift</skill>
-      <skill>AlamoFire/AFNetworking</skill>
-      <skill>Quick/Nimble</skill>
-      <skill>MVVM</skill>
-      <skill>React Native</skill>
       <skill>React.js</skill>
       <skill>Node.js</skill>
       <skill>Express.js</skill>
-      <skill>Android</skill>
-      <skill>JUnit</skill>
-      <skill>Mocha.js</skill>
-    </skills-category>
-    <skills-category heading="Platforms and frameworks" variant="mobile">
       <skill>iOS</skill>
       <skill>Android</skill>
+      <skill>React Native</skill>
+      <skill>JUnit</skill>
+      <skill>Mocha.js</skill>
+      <skill>RxSwift</skill>
+      <skill>SwiftUI</skill>
+      <skill>Quick/Nimble</skill>
+    </skills-category>
+    <skills-category heading="Platforms and frameworks" variant="mobile">
+      <skill>Mobile applications</skill>
+      <skill>iOS platform</skill>
       <skill>SwiftUI</skill>
       <skill>RxSwift</skill>
       <skill>UIKit</skill>
       <skill>Quick/Nimble</skill>
       <skill>Core Data</skill>
       <skill>Core Bluetooth (BLE)</skill>
+      <skill>Core Animation</skill>
       <skill>Swift Package Manager (SwiftPM)</skill>
       <skill>Cocoapods</skill>
       <skill>React Native</skill>
+      <skill>Android platform</skill>
       <skill>React.js</skill>
       <skill>Node.js</skill>
       <skill>Express.js</skill>
@@ -81,11 +84,15 @@
     </skills-category>
 
     <skills-category heading="Tools and practices" variant="general mobile">
-      <skill>Git</skill>
+      <skill>Git version control</skill>
+      <skill>Continuous integration/continuous deployment (CI/CD)</skill>
+      <skill>Unit testing</skill>
+      <skill>Integration testing</skill>
+      <skill>Concurrency/multi-threading</skill>
+      <skill>MVVM</skill>
       <skill>REST</skill>
       <skill>PostgreSQL</skill>
       <skill>MySQL</skill>
-      <skill>CI/CD</skill>
       <skill>Docker</skill>
       <skill>Kubernetes</skill>
       <skill>Agile</skill>
