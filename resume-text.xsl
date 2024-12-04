@@ -200,8 +200,8 @@
     <xsl:param name="year" />
 
     <xsl:if test="$include-months = 'yes' and $month">
-      <xsl:value-of select="$month" />
-      <xsl:text>/</xsl:text>
+      <xsl:value-of select="substring('JanFebMarAprJunJulAugSepOctNovDec', 1 + 3 * ($month - 1), 3)" />
+      <xsl:text> </xsl:text>
     </xsl:if>
     <xsl:value-of select="$year" />
   </xsl:template>
