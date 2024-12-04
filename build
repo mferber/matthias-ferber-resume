@@ -3,15 +3,18 @@
 DEST_ROOT=generated
 VARIANTS=("mobile" "general")
 
+FOO_PATH=/Users/matthias/Projects/Resume/fop-2.9/fop
+JAVA_HOME=/opt/homebrew/opt/openjdk
+
 for VARIANT in ${VARIANTS[@]}
 do
   DEST=$DEST_ROOT/$VARIANT
   mkdir -p $DEST
 
   # generate PDF
-  fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume-pdf.xsl $DEST/Matthias_Ferber_resume.pdf
+  JAVA_HOME=$JAVA_HOME $FOO_PATH/fop -param variant $VARIANT -c ./fop.xconf -xml resume.xml -xsl resume-pdf.xsl $DEST/Matthias_Ferber_resume.pdf
 
   # to generate plaintext, just use the built-in XSLT engine bundled in FOP for simplicity
   # include months in work timeframes - a lot of applications ask for those
-  fop -param variant $VARIANT -param include-months yes -c ./fop.xconf -xml resume.xml -xsl resume-text.xsl -foout $DEST/Matthias_Ferber_resume.txt
+  JAVA_HOME=$JAVA_HOME $FOO_PATH/fop -param variant $VARIANT -param include-months yes -c ./fop.xconf -xml resume.xml -xsl resume-text.xsl -foout $DEST/Matthias_Ferber_resume.txt
 done
