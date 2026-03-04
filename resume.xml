@@ -3,7 +3,7 @@
 <resume name="Matthias Ferber">
   <contact-info>
     <contact-item column="left">Cambridge, MA 02138</contact-item>
-    <contact-item column="left">Mobile • (617) 909-5685</contact-item>
+    <contact-item column="left">Phone • (617) 909-5685</contact-item>
     <contact-item column="left">Email • matthias.ferber@gmail.com</contact-item>
     <contact-item column="right" logo="linkedin">https://www.linkedin.com/in/matthiasferber • LinkedIn</contact-item>
     <contact-item column="right" logo="github">https://github.com/mferber • GitHub</contact-item>
