@@ -3,7 +3,7 @@
 DEST_ROOT=generated
 VARIANTS=("mobile" "general")
 
-FOO_PATH=/Users/matthias/Projects/Resume/fop-2.9/fop
+FOO_PATH=/Users/matthias/Projects/Resume/fop-2.11/fop
 JAVA_HOME=/opt/homebrew/opt/openjdk
 
 for VARIANT in ${VARIANTS[@]}
